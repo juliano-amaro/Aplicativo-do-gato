@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
     <title>Esse gato sou eu</title>
 </head>
 <body>
     <header>
-        <img src="" alt="logo">
+        <img src="../static/gatologo-removebg-preview.png" width="150px" alt="logo">
         <h1>Esse gato sou eu</h1>
     </header>
     <main>
@@ -21,7 +22,7 @@
             </div>
             <div class="gato">
                 {% if not url_imagem %}
-                    <img src="..." alt="...">
+                    <img src="/static/gato4.webp" alt="...">
                     <p>Nome</p>
                 {% else %}
                     <img src="{{ url_imagem }}" alt="Gato">
